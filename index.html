@@ -14,7 +14,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    </head>
   <body>
 
 
@@ -112,7 +116,7 @@
       </div>
     </section>
     <!---------------------------------------------------------Welcome-------------------------------------------------------------------->
-    <section class="my-5">
+    <section class="my-5 wow animate__animated animate__fadeInUp">
       <div>
         <h1 class="text-center">Welcome</h1>
         <p class="text-center my-5">This is my demo website</p>
@@ -121,11 +125,11 @@
 
 
     <!----------------------------------------------------------Progress bar-------------------------------------------------------->
-    <section>
+    <section class="container-fluid wow animate__animated animate__fadeInUp">
       <div class="row ">
         <div class=" col-lg-4 col-md-4 cl-12 "> 
           <div>
-              <h3 class="py-3 ">HTML</h3>
+              <h3 class="pt-3 ">HTML</h3>
           </div>
 
           <div class="progress">
@@ -133,7 +137,7 @@
           </div>
 
           <div>
-              <h3 class="py-3">CSS</h3>
+              <h3 class="pt-3">CSS</h3>
           </div>
 
           <div class="progress">
@@ -141,7 +145,7 @@
           </div>
 
           <div>
-              <h3 class="py-3">BOOTSTRAP</h3>
+              <h3 class="pt-3">BOOTSTRAP</h3>
           </div>
 
           <div class="progress">
@@ -150,17 +154,20 @@
         </div>
 
 
-        <div class=" col-lg-4 col-md-4 cl-12 "> 
+        <div class=" col-lg-4 col-md-4 cl-12 py- "> 
           <img src="images\Carousel3.PNG" alt="image" class="img-fluid">
         </div>
         
-        
+        <div class=" col-lg-4 col-md-4 cl-12 py- "> 
+          <h4>Welcome !</h4>
+          <p class="pt-4">Nature is the gift of mother earth to all humankind and other living organisms. It constitutes Greenery, Soil, Air, Water and all physical factors that are the pillars of lives living here. Nature is also called a human attribute in behavioral terminology. The natural environment which is in physical form is called nature.</p>
+        </div>
         
       </div>
     </section>
     <!----------------------------------------------------------CARDS------------------------------------------------------------------->
 
-    <section>
+    <section class=" wow animate__animated animate__fadeInUp">
       <h1 class="text-center my-5">CARDS</h1>
 
 
@@ -219,5 +226,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+      <script>
+        var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          },
+          scrollContainer: null,    // optional scroll container selector, otherwise use window,
+          resetAnimation: true,     // reset animation on end (default is true)
+        }
+      );
+      wow.init();
+      </script>
   </body>
 </html>
