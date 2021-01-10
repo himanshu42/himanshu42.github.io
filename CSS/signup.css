@@ -1,2 +1,12 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Redressed', cursive;}
 
+.bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 110%;
+}
+.jb{
+    width: 100%;
+}
+
